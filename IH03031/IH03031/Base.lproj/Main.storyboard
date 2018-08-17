@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IH03031" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHa-s4-vX2">
+                                <rect key="frame" x="46" y="116" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2r-9w-Ww2">
+                                <rect key="frame" x="0.0" y="619" width="380" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fD2-Ol-Rf1"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem selectedImage="google" systemItem="search" id="Gj4-en-4c5"/>
+                                    <tabBarItem tag="1" selectedImage="amazon" systemItem="search" id="gCX-wZ-Rtx">
+                                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="-5" maxY="0.0"/>
+                                    </tabBarItem>
+                                    <tabBarItem tag="2" systemItem="search" id="HvV-ID-t2r"/>
+                                    <tabBarItem tag="3" systemItem="search" id="7NY-Wl-mq2"/>
+                                </items>
+                            </tabBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zTY-vq-nUN">
+                                <rect key="frame" x="0.0" y="20" width="380" height="599"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="v1n-lw-ZEf">
+                                <rect key="frame" x="165" y="289" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="bdo-UL-ZDg"/>
+                                    <constraint firstAttribute="height" constant="50" id="fWu-Rc-ibI"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v1n-lw-ZEf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="269" id="1Cg-Fn-lmJ"/>
+                            <constraint firstItem="zTY-vq-nUN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="26P-ZR-l4T"/>
+                            <constraint firstItem="E2r-9w-Ww2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Bls-V8-UlG"/>
+                            <constraint firstItem="E2r-9w-Ww2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CLw-1T-WCv"/>
+                            <constraint firstItem="E2r-9w-Ww2" firstAttribute="top" secondItem="zTY-vq-nUN" secondAttribute="bottom" id="M3y-eh-Q1e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E2r-9w-Ww2" secondAttribute="bottom" id="P47-mU-0Hl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v1n-lw-ZEf" secondAttribute="trailing" constant="165" id="Q4U-HV-pg0"/>
+                            <constraint firstItem="v1n-lw-ZEf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="165" id="RCE-Ap-ZY3"/>
+                            <constraint firstItem="E2r-9w-Ww2" firstAttribute="top" secondItem="v1n-lw-ZEf" secondAttribute="bottom" constant="280" id="mjL-HO-nuL"/>
+                            <constraint firstItem="zTY-vq-nUN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wPq-bI-J0W"/>
+                            <constraint firstItem="zTY-vq-nUN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="z3b-NC-wvd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myIndicator" destination="v1n-lw-ZEf" id="Vcz-rm-fbL"/>
+                        <outlet property="myTabBar" destination="E2r-9w-Ww2" id="rk3-aA-K7R"/>
+                        <outlet property="myWebView" destination="zTY-vq-nUN" id="Fyi-Gw-zVA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-374" y="118"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="amazon" width="30" height="30"/>
+        <image name="google" width="45" height="30"/>
+    </resources>
+</document>
