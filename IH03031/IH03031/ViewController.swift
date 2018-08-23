@@ -28,6 +28,7 @@ class ViewController: UIViewController,UITabBarDelegate,UIWebViewDelegate {
         myWebView.scrollView.showsHorizontalScrollIndicator = false
         myWebView.scrollView.showsVerticalScrollIndicator = false
         
+        myIndicator.isHidden=true
         // Do any additional setup after loading the view, typically from a nib.
     }
 
